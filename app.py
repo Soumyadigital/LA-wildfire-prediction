@@ -10,7 +10,7 @@ processed_data = pd.read_csv(r'./datasets/legit_sample_vectors.csv')
 
 # # Load the trained XGBoost model
 # with open('./saved_models/XGboost_wildfire_pred_model (1).sav', 'rb') as file:
-with open(r'./saved_models/XGboost_wildfire_pred_model (1).sav', 'rb') as file:
+with open('./saved_models/XGboost_wildfire_pred_model (1).sav', 'rb') as file:
         model = pickle.load(file)
 # Streamlit app title
 st.title('LA wildfire Prediction App')
