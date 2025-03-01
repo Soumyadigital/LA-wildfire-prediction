@@ -5,11 +5,11 @@ import numpy as np
 
 
 # Load the dataset
-df = pd.read_csv(r'/datasets/legit_sample (1).csv')
-processed_data = pd.read_csv(r'/datasets/legit_sample_vectors.csv')
+df = pd.read_csv(r'./datasets/legit_sample (1).csv')
+processed_data = pd.read_csv(r'./datasets/legit_sample_vectors.csv')
 
 # Load the trained XGBoost model
-with open('/saved_models/XGboost_wildfire_pred_model (1).sav', 'rb') as file:
+with open('./saved_models/XGboost_wildfire_pred_model (1).sav', 'rb') as file:
     model = pickle.load(file)
 
 # Streamlit app title
